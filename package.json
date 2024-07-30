@@ -1,0 +1,29 @@
+{
+  "name": "noc-tasks-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --respawn src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dssaenz/noc-tasks-node.git"
+  },
+  "keywords": [],
+  "author": "Darwin Saenz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dssaenz/noc-tasks-node/issues"
+  },
+  "homepage": "https://github.com/Dssaenz/noc-tasks-node#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}
